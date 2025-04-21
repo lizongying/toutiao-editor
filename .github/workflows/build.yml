@@ -22,12 +22,16 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Install Yarn
+        run: |
+          npm install -g yarn
+
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Archive
         run: |
-          npm run build && cd dist && zip -v archive.zip *
+          yarn run build && cd dist && zip -v archive.zip *
 
       - name: Create Release
         id: create_release
