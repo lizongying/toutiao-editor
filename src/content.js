@@ -37,7 +37,7 @@ class Editor {
                             if (tag !== null && tag.tagName === 'PRE') {
                                 this.addCode(v, tag)
                             } else {
-                                this.addTitle(r)
+                                tag = this.addTitle(r)
                             }
 
                             return
@@ -48,7 +48,7 @@ class Editor {
                             if (tag !== null && tag.tagName === 'PRE') {
                                 this.addCode(v, tag)
                             } else {
-                                this.addLine()
+                                tag = this.addLine()
                             }
 
                             return
@@ -131,7 +131,7 @@ class Editor {
                         if (tag !== null && tag.tagName === 'PRE') {
                             this.addCode(v, tag)
                         } else {
-                            this.addP(v)
+                            tag = this.addP(v)
                         }
                     }
                 })
@@ -171,6 +171,7 @@ class Editor {
         const el = document.createElement(`h${r[1].length}`)
         el.innerText = r[2]
         Editor.editor.appendChild(el)
+        return el
     }
 
     addUl() {
@@ -226,11 +227,13 @@ class Editor {
 
         el.innerHTML = r1
         Editor.editor.appendChild(el)
+        return el
     }
 
     addLine() {
         const el = document.createElement(`hr`)
         Editor.editor.appendChild(el)
+        return el
     }
 
     addQuote() {

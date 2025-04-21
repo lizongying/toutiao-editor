@@ -5,14 +5,19 @@
 通過Markdown簡潔的語法，助您輕鬆實現專業排版，提升內容創作效率，讓頭條號文章編輯更加得心應手。
 後續會支持知乎、微博等更多平台，敬請關注。
 
-![image](./screenshots/img.png)
-![image](./screenshots/img_2.png)
+![image](https://raw.githubusercontent.com/lizongying/toutiao-editor/refs/heads/main/screenshots/img.png)
+![image](https://raw.githubusercontent.com/lizongying/toutiao-editor/refs/heads/main/screenshots/img_2.png)
 
 ## 使用方法
 
 1. 安裝本插件。
 2. 複製粘貼Markdown格式文本到輸入區域（默認會提示“請輸入Markdown”）。
 3. 本插件會自動生成編輯器對應的格式。
+
+## 本地安裝
+
+1. 下載本插件[releases](https://github.com/lizongying/toutiao-editor/releases)，選擇最新版本，下載toutiao-editor.zip，並解壓。
+2. 以Chrome為例，擴展程序管理頁面（擴展程序 -> 管理擴展程序）。打開 “開發者模式” -> 加載已解壓的擴展程序 -> 選擇剛才解壓的文件夾。
 
 ## 已支持
 
