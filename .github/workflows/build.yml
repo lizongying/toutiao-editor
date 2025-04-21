@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read
       packages: write
 
     steps:
@@ -31,7 +30,7 @@ jobs:
 
       - name: Archive
         run: |
-          yarn run build && cd dist && zip -v archive.zip *
+          yarn run build && zip -r archive.zip ./dist
 
       - name: Create Release
         id: create_release
@@ -50,6 +49,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/archive.zip
+          asset_path: ./archive.zip
           asset_name: toutiao-editor.zip
           asset_content_type: application/zip
