@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "頭條編輯器",
+  "description": "這是一個可以在頭條號裡添加Markdown的瀏覽器插件",
+  "version": "1.0",
+  "permissions": [
+    "https://mp.toutiao.com/profile_v4/graphic/publish"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mp.toutiao.com/profile_v4/graphic/publish"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
