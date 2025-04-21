@@ -1,10 +1,7 @@
 all: build
 
-clean:
-	cd dist && rm ./*
-
 build:
-	yarn run build && cd dist && zip -v archive.zip *
+	yarn run build && zip -r archive.zip ./dist
 
 publish:
 
