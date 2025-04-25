@@ -1,13 +1,25 @@
 {
   "name": "toutiao",
-  "version": "1.0.6",
+  "version": "1.0.7",
+  "description": "這是一個可在頭條號等編輯器內添加Markdown格式文本的瀏覽器插件。\n本插件已全面支持標題、加粗、引用、分割線、有序/無序列表、傾斜、刪除線、下劃線、代碼塊、超鏈接及圖片插入。\n通過Markdown簡潔的語法，助您輕鬆實現專業排版，提升內容創作效率，讓頭條號文章編輯更加得心應手。\n後續會支持知乎、微博等更多平台，敬請關注。",
+  "author": "Li ZongYing",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizongying/toutiao-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lizongying/toutiao-editor/issues"
+  },
+  "homepage": "https://lizongying.github.io/toutiao-editor/",
   "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "vite build"
   },
   "devDependencies": {
+    "path": "^0.12.7",
     "vite": "^6.3.2",
+    "vite-plugin-html": "^3.2.2",
     "vite-plugin-static-copy": "^2.3.1"
   },
   "dependencies": {}

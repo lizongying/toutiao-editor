@@ -6,13 +6,17 @@
   "permissions": [
     "https://mp.toutiao.com/profile_v4/graphic/publish"
   ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon.png"
+  },
   "content_scripts": [
     {
       "matches": [
         "https://mp.toutiao.com/profile_v4/graphic/publish"
       ],
       "js": [
-        "content.js"
+        "static/content.js"
       ],
       "run_at": "document_end"
     }

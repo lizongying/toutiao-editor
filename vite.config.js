@@ -1,25 +1,29 @@
 import {defineConfig} from 'vite'
-import {viteStaticCopy} from 'vite-plugin-static-copy'
+import {createHtmlPlugin} from "vite-plugin-html"
+import {dirname, resolve} from 'path'
+import {fileURLToPath} from 'url'
+
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 export default defineConfig({
     plugins: [
-        viteStaticCopy({
-            targets: [
-                {
-                    src: 'src/assets/*',
-                    dest: ''
-                }
-            ]
+        createHtmlPlugin({
+            minify: true
         })
     ],
+    publicDir: 'public',
+    base: '/toutiao-editor/',
     build: {
         rollupOptions: {
             input: {
-                content: 'src/content.js',
+                popup: resolve(__dirname, 'popup.html'),
+                content: resolve(__dirname, 'src/content.js'),
             },
             output: {
-                dir: 'dist',
-                entryFileNames: '[name].js'
+                dir: 'docs',
+                entryFileNames: 'static/[name].js',
             }
         }
     }
