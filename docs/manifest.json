@@ -7,8 +7,8 @@
     "https://mp.toutiao.com/profile_v4/graphic/publish"
   ],
   "action": {
-    "default_popup": "index.html",
-    "default_icon": "assets/icon.png"
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon-128x128.png"
   },
   "content_scripts": [
     {

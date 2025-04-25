@@ -14,7 +14,7 @@ export default defineConfig({
         })
     ],
     publicDir: 'public',
-    base: '/toutiao-editor/',
+    base: './',
     build: {
         rollupOptions: {
             input: {
