@@ -1,7 +1,7 @@
 all: build
 
 build:
-	yarn run build && zip -r archive.zip ./docs
+	yarn run build && rm -f archive.zip && zip -r archive.zip ./docs
 
 publish:
 

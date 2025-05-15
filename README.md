@@ -14,6 +14,11 @@
 2. 複製粘貼Markdown格式文本到輸入區域（默認會提示“請輸入Markdown”）。
 3. 本插件會自動生成編輯器對應的格式。
 
+## 商店
+
+- [chrome](https://chromewebstore.google.com/detail/kgjehpahngcplcchemcngjncljcelmhl)
+- [edge](https://microsoftedge.microsoft.com/addons/detail/pljkllkgjdjefjejmcelgcliiflefmlg)
+
 ## 本地安裝
 
 1. 下載本插件[releases](https://github.com/lizongying/toutiao-editor/releases)，選擇最新版本，下載toutiao-editor.zip，並解壓。
